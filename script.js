@@ -1,4 +1,3 @@
-// Select HTML elements by their IDs and assign them to variables
 const elements = {
     questionContainer: document.getElementById("question-container"),
     questionElement: document.getElementById("question"),
@@ -8,7 +7,6 @@ const elements = {
     resultDiv: document.getElementById("result"),
 };
 
-// Array of quiz questions and answers
 const questions = [
     {
         question: "Which HTML tag is used to create a hyperlink?",
@@ -114,7 +112,7 @@ function startQuiz() {
     currentQuestionIndex = 0;
     toggleVisibility(elements.questionContainer, true);
     toggleVisibility(elements.nextButton, true);
-    toggleVisibility(elements.restartButton, false);
+    toggleVisibility(elements.restartButton, );
     toggleVisibility(elements.resultDiv, false);
     setNextQuestion();
 }
